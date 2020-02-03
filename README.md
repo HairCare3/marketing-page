@@ -13,4 +13,4 @@ Developers Page
 - Includes  way to contact each indivdual programmer. 
 
 About Page
-- Includes a detailed description of the product. 
+- Includes a detailed description of the product. .
