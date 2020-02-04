@@ -6,6 +6,9 @@
         align-items: center;
         margin: 5%;
     h1{
+        @media @mobile {
+            align-self: flex-start;
+        }
         margin-top: 1%;
         padding: 1%;
     }
@@ -16,12 +19,22 @@
         flex-direction: column;
         margin: 1% 1%;
         .sectionTitle{
+            @media @mobile{
+                align-self: center;
+                margin: 5%;
+            }
             margin-bottom: 1%;
         }
         .hairProfessional{
+            @media @mobile{
+                margin-bottom: 5%;
+            }
             display: flex;
             padding: 1%;
             .profilePic{
+                @media @mobile{
+                    display: none;
+                }
                 flex-shrink: 0;
                 text-align: center;
                 border: 1px solid black;
@@ -31,15 +44,27 @@
                 margin: 0 1%;
                 align-self: flex-start;
                 h3{
+                    @media @mobile {
+                        margin-bottom: 2%;
+                    }
                     margin-left: 1%;
                 }
                 p{
+                    @media @mobile {
+                        margin-bottom: 1%;;
+                    }
                     padding: 1%;
                 }
                 button{
+                    @media @mobile{
+                        width: 48%;
+                    }
                     margin: 0 1%;
                 }
                 a{
+                    @media @mobile{
+                        width: 48%;
+                    }
                     text-decoration: none;
                 }
             }
@@ -58,19 +83,38 @@
             flex-direction: column;
             margin-left: 1%;
             h3{
+                @media @mobile{
+                    margin: 3% 0;
+                }
                 margin: 1% 0;
             }
             .reviewForm{
                 display: flex;
                 flex-direction: column;
                 input {
+                    @media @mobile{
+                        align-self: center;
+                        width: 90%;
+                        border: 1px inset darkslategray;
+                    }
                     width: 20%;
                 }
                 textarea{
+                    @media @mobile{
+                        align-self: center;
+                        width: 90%;
+                        height: 10vh;
+                        border: 1px inset darkslategray;
+                        margin: 2%;
+                    }
                     margin: 1% 1% 1% 0;
                     height: 15vh;
                 }
                 #submitHere{
+                    @media @mobile{
+                        width: 20%;
+                        margin-bottom: 5%;
+                    }
                     width: 10%;
                     margin-bottom: 1%;
                 }
@@ -81,6 +125,9 @@
         display: flex;
         flex-direction: column;
         h3{
+            @media @mobile{
+                margin: 5%;
+            }
             align-self: flex-end;
             margin: 2%;
         }
@@ -91,10 +138,17 @@
             flex-wrap: nowrap;
             margin-left: 1%;
             h4{
+                @media @mobile{
+                    align-self: center;
+                    margin: 3%;
+                }
                 align-self: flex-start;
                 margin: 1% 1% 1% 5%;
             }
             p.pastReview{
+                @media @mobile{
+                    margin-bottom: 2%;
+                }
                 padding: 1%;
             }
         }
@@ -107,6 +161,11 @@
         margin: 4%;
         h3{
             margin: 2% 0;
+        }
+        .sectionSignIn{
+            @media @mobile{
+                border: 1px outset darkslategray;
+            }
         }
 
     }

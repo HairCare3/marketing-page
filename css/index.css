@@ -143,6 +143,11 @@ html {
   margin-top: 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .home-wrapper header h1 {
+    align-self: flex-start;
+  }
+}
 .home-wrapper .stylists {
   display: flex;
   flex-direction: column;
@@ -151,15 +156,31 @@ html {
 .home-wrapper .stylists .sectionTitle {
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .home-wrapper .stylists .sectionTitle {
+    align-self: center;
+    margin: 5%;
+  }
+}
 .home-wrapper .stylists .hairProfessional {
   display: flex;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .home-wrapper .stylists .hairProfessional {
+    margin-bottom: 5%;
+  }
 }
 .home-wrapper .stylists .hairProfessional .profilePic {
   flex-shrink: 0;
   text-align: center;
   border: 1px solid black;
   width: 10%;
+}
+@media (max-width: 500px) {
+  .home-wrapper .stylists .hairProfessional .profilePic {
+    display: none;
+  }
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer {
   margin: 0 1%;
@@ -168,14 +189,34 @@ html {
 .home-wrapper .stylists .hairProfessional .stylistContainer h3 {
   margin-left: 1%;
 }
+@media (max-width: 500px) {
+  .home-wrapper .stylists .hairProfessional .stylistContainer h3 {
+    margin-bottom: 2%;
+  }
+}
 .home-wrapper .stylists .hairProfessional .stylistContainer p {
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .home-wrapper .stylists .hairProfessional .stylistContainer p {
+    margin-bottom: 1%;
+  }
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer button {
   margin: 0 1%;
 }
+@media (max-width: 500px) {
+  .home-wrapper .stylists .hairProfessional .stylistContainer button {
+    width: 48%;
+  }
+}
 .home-wrapper .stylists .hairProfessional .stylistContainer a {
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  .home-wrapper .stylists .hairProfessional .stylistContainer a {
+    width: 48%;
+  }
 }
 .home-wrapper .reviews {
   display: flex;
@@ -193,6 +234,11 @@ html {
 .home-wrapper .reviews .reviewInput h3 {
   margin: 1% 0;
 }
+@media (max-width: 500px) {
+  .home-wrapper .reviews .reviewInput h3 {
+    margin: 3% 0;
+  }
+}
 .home-wrapper .reviews .reviewInput .reviewForm {
   display: flex;
   flex-direction: column;
@@ -200,13 +246,35 @@ html {
 .home-wrapper .reviews .reviewInput .reviewForm input {
   width: 20%;
 }
+@media (max-width: 500px) {
+  .home-wrapper .reviews .reviewInput .reviewForm input {
+    align-self: center;
+    width: 90%;
+    border: 1px inset darkslategray;
+  }
+}
 .home-wrapper .reviews .reviewInput .reviewForm textarea {
   margin: 1% 1% 1% 0;
   height: 15vh;
 }
+@media (max-width: 500px) {
+  .home-wrapper .reviews .reviewInput .reviewForm textarea {
+    align-self: center;
+    width: 90%;
+    height: 10vh;
+    border: 1px inset darkslategray;
+    margin: 2%;
+  }
+}
 .home-wrapper .reviews .reviewInput .reviewForm #submitHere {
   width: 10%;
   margin-bottom: 1%;
+}
+@media (max-width: 500px) {
+  .home-wrapper .reviews .reviewInput .reviewForm #submitHere {
+    width: 20%;
+    margin-bottom: 5%;
+  }
 }
 .home-wrapper .userReviews {
   display: flex;
@@ -215,6 +283,11 @@ html {
 .home-wrapper .userReviews h3 {
   align-self: flex-end;
   margin: 2%;
+}
+@media (max-width: 500px) {
+  .home-wrapper .userReviews h3 {
+    margin: 5%;
+  }
 }
 .home-wrapper .userReviews .hc3User {
   display: flex;
@@ -227,8 +300,19 @@ html {
   align-self: flex-start;
   margin: 1% 1% 1% 5%;
 }
+@media (max-width: 500px) {
+  .home-wrapper .userReviews .hc3User h4 {
+    align-self: center;
+    margin: 3%;
+  }
+}
 .home-wrapper .userReviews .hc3User p.pastReview {
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .home-wrapper .userReviews .hc3User p.pastReview {
+    margin-bottom: 2%;
+  }
 }
 .home-wrapper .hairCarePro {
   display: flex;
@@ -239,4 +323,9 @@ html {
 }
 .home-wrapper .hairCarePro h3 {
   margin: 2% 0;
+}
+@media (max-width: 500px) {
+  .home-wrapper .hairCarePro .sectionSignIn {
+    border: 1px outset darkslategray;
+  }
 }
