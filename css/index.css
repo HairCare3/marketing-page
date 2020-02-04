@@ -138,3 +138,22 @@ header {
   justify-content: center;
   align-items: center;
 }
+header h1 {
+  margin-top: 1%;
+  padding: 1%;
+}
+.stylists {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 1%;
+}
+.stylists .sectionTitle {
+  margin-bottom: 1%;
+}
+.stylists .hairProfessional {
+  display: flex;
+}
+.stylists .hairProfessional .profilePic {
+  text-align: center;
+  border: 1px solid black;
+}
