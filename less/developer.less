@@ -1,0 +1,27 @@
+.developers-wrapper {
+    header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dev1, .dev2, .dev3, .dev4, .dev5 {
+        display: flex;
+       flex-wrap: wrap; 
+       justify-content: space-around;
+       margin: 5%;
+       
+    }
+    
+    @media (max-width: 500px){
+        .dev1, .dev2, .dev3, .dev4, .dev5  {
+            display: flex;
+           flex-direction: column;
+           flex-wrap: wrap-reverse;
+           align-content: flex-end;
+    }
+    
+    
+}
+}
