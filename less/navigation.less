@@ -1,14 +1,22 @@
 // NAVIGATION 
 .navbar{
-  .displayFlex(flex-end, center);
-  align-content: flex-end;
-  margin: 1% 1% 1% 1%;
-  nav{
+    .displayFlex(flex-end, center);
+    align-content: flex-end;
+    margin: 1% 1% 1% 1%;
+    nav{
+    @media @mobile {
+        .displayFlex(space-evenly, center);
+        width: 100%;
+        margin: 1% 5%;
+    }
     .displayFlex(space-between, flex-end);
     width: 30%;
     a {
+        @media @mobile{
+            padding: 1% 0;
+        }
         font-size: 1.5rem;
         text-decoration: none;
     }
-  }
+    }
 }
