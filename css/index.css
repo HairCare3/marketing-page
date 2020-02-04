@@ -143,6 +143,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
+  align-items: center;
   width: 40%;
   margin-right: 2%;
 }
@@ -163,4 +164,8 @@ html {
   .navbar nav a {
     padding: 1% 0;
   }
+}
+.navbar nav .loginBtn {
+  font-size: 1.5rem;
+  border: none;
 }
