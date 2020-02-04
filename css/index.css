@@ -132,15 +132,18 @@ table {
 html {
   font-size: 62.5%;
 }
-footer {
-  margin: 5%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: 'Condiment', cursive;
 }
-footer h3 {
-  margin-top: 5%;
-}
-footer a {
-  padding: 2%;
-  text-decoration: none;
+p {
+  font-family: 'Lateef', cursive;
 }
 .navbar {
   display: flex;
@@ -179,15 +182,26 @@ footer a {
   font-size: 1.5rem;
   border: none;
 }
-
-.home-wrapper header {
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-
+footer h3 {
+  margin-top: 5%;
+}
+footer a {
+  padding: 2%;
+  text-decoration: none;
+}
+.home-wrapper header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5%;
+}
 .home-wrapper header h1 {
   margin-top: 1%;
   padding: 1%;
