@@ -4,6 +4,103 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HairCare3</title>
+        <link href="css/index.css" rel="stylesheet">
     </head>
-    <body></body>
+    <body class="home-wrapper">
+        <div class = 'navbar'>
+            <nav>
+                <!-- <img class="logo"> -->
+                <a href = "index.html">Home</a>
+                <a href = "about.html">HC3 Product</a>
+                <a href = "developers.html">The Developers</a>
+                <form action="#"> 
+                    <button class = "loginBtn" type="button"> 
+                        Login 
+                    </button> 
+                </form> 
+            </nav>
+        </div>
+        <header>
+            <!--ADD BG IMG PLS-->
+            <h1>Hair to the Throne</h1>
+            <p>Find your perfect hairstylist with Hair Care 3! You can add and read reviews, ratings, and view photos to find the hairstylist worthy of your crown.</p>
+        </header>
+        <section class="stylists">
+            <!-- ADD STARS TO STYLISTS WITH CSS? -->
+            <h2 class="sectionTitle">HC3 Pro Stylists</h2>
+            <div class="hairProfessional">
+                <div class="profilePic">Photo Here</div>
+                <div class="stylistContainer">
+                    <h3>Stylist 1</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
+                    <button>Book Stylist</button>
+                    <a href="#reviews">Write Review</a>
+                </div>
+            </div>
+            <div class="hairProfessional">
+                <div class="profilePic">Photo Here</div>
+                <div class="stylistContainer">
+                    <h3>Stylist 2</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
+                    <button>Book Stylist</button>
+                    <a href="#reviews">Write Review</a>
+                </div>
+                
+            </div>
+            <div class="hairProfessional">
+                <div class="profilePic">Photo Here</div>
+                <div class="stylistContainer">
+                    <h3>Stylist 3</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
+                    <button>Book Stylist</button>
+                    <a href="#writeReviews">Write Review</a>
+                </div>
+
+            </div>
+            <div class="hairProfessional">
+                <div class="profilePic">Photo Here</div>
+                <div class="stylistContainer">
+                    <h3>Stylist 4</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
+                    <button>Book Stylist</button>
+                    <a href="#reviews">Write Review</a>
+                </div>
+            </div>
+        </section>
+        <section class="reviews">
+            <h2 class="sectionTitle">HC3 Reviews</h2>
+            <div class="reviewInput">
+                <h3 id="writeReview">Write a Review:</h3>
+                <form class="reviewForm">
+                    <input id="stylistReview" type="text" value="Stylist Name">
+                    <textarea cols="50" maxlength="500">Type Here</textarea>
+                    <input id='submitHere' type="submit" value="Submit">
+                </form>
+            </div>
+            <div class="userReviews">
+                <h3>What Others are Saying</h3>
+                <div class="hc3User">
+                    <h4>User 1</h4>
+                    <p class="pastReview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, voluptates illo laboriosam explicabo pariatur voluptate! Possimus consectetur atque minus eligendi et consequatur enim asperiores ipsa, nemo odit similique corrupti blanditiis?</p>
+                </div>
+                <div class="hc3User">
+                    <h4>User 1</h4>
+                    <p class="pastReview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, voluptates illo laboriosam explicabo pariatur voluptate! Possimus consectetur atque minus eligendi et consequatur enim asperiores ipsa, nemo odit similique corrupti blanditiis?</p>
+                </div>
+                <div class="hc3User">
+                    <h4>User 1</h4>
+                    <p class="pastReview">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta, voluptates illo laboriosam explicabo pariatur voluptate! Possimus consectetur atque minus eligendi et consequatur enim asperiores ipsa, nemo odit similique corrupti blanditiis?</p>
+                </div>
+            </div>
+        </section>
+        <section class="hairCarePro">
+            <h3 class="sectionTitle">Hair Care 3 Pro?</h3>
+            <button class="sectionSignIn">Sign In/Up Here</button>
+        </section>
+        <footer>
+            <h3 class="footerTitle">Contact Us!</h3>
+            <a href = "mailto: abc@example.com">Send Email</a>
+            <p>Copyrighted?</p>
+        </footer>
+    </body>
 </html>
