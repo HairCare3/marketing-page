@@ -156,7 +156,7 @@ html {
   padding: 1%;
 }
 .home-wrapper .stylists .hairProfessional .profilePic {
-  flex-basis: content;
+  flex-shrink: 0;
   text-align: center;
   border: 1px solid black;
   width: 10%;
@@ -214,7 +214,29 @@ html {
 }
 .home-wrapper .userReviews h3 {
   align-self: flex-end;
+  margin: 2%;
 }
 .home-wrapper .userReviews .hc3User {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: 1%;
+}
+.home-wrapper .userReviews .hc3User h4 {
+  align-self: flex-start;
+  margin: 1% 1% 1% 5%;
+}
+.home-wrapper .userReviews .hc3User p.pastReview {
+  padding: 1%;
+}
+.home-wrapper .hairCarePro {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4%;
+}
+.home-wrapper .hairCarePro h3 {
+  margin: 2% 0;
 }
