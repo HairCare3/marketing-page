@@ -2,7 +2,10 @@
 .navbar{
     .displayFlex(flex-end, center);
     align-content: flex-end;
-    margin: 1% 1% 1% 1%;
+    margin: 0% 1% 1% 0%;
+    padding: 1%;
+    width: 100%;
+    background-color: @blue-green;
     nav{
     @media @mobile {
         .displayFlex(space-evenly, center);
@@ -13,14 +16,19 @@
     align-items: center;
     width: 40%;
     margin-right: 2%;
+    
     a {
         @media @mobile{
             padding: 1% 0;
         }
+        color: @nav-font;
         font-size: 1.5rem;
         text-decoration: none;
     }
     .loginBtn {
+        text-align: center;
+        color: @nav-font;
+        background-color: @blue-green;
         font-size: 1.5rem;
         border: none;   
     }
