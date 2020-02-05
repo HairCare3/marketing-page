@@ -487,3 +487,15 @@ header h1 {
   margin-top: 1%;
   padding: 1%;
 }
+.main-section-wrapper {
+  border: 2px dashed #1A3A3A;
+  margin: 1% 5%;
+  padding: 2%;
+  background-color: #DDC4DD;
+}
+.main-section-wrapper .mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
