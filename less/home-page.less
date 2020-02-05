@@ -6,22 +6,53 @@
         align-items: center;
         margin: 5%;
         border-bottom: 1px dashed @nav-bg;
-    h1{
-        @media @mobile {
-            text-align: center;
-            margin-top: 2%;
-            font-size: 6rem;
+        .header-img{
+            img {
+                // @media @mobile{
+                //     display: none;
+                // }
+                width: 100%;
+                height: auto;
+                opacity: .4;
+                margin-bottom: 5%;
+            }
         }
-        font-size: 10rem;
-        text-shadow: 4px 4px 4px #aaa;
-        margin-top: 1%;
-        padding: 1%;
-    }
-    p{
-        font-size: 2rem;
-        font-style: italic;
-        margin-bottom: 5%;;
-    }
+        .header-text{
+            @media @mobile{
+                position: none;
+            }
+            position: absolute;
+            z-index: 999;
+            margin: 0 auto;
+            padding: 2%;
+            text-align: center;
+            // border-top: 1px solid @nav-bg;
+            // // border-bottom: 1px solid @nav-bg;
+            // background-color: @style-bg;
+            width: 100%;
+ 
+            h1{
+                @media @mobile {
+                    text-align: center;
+                    margin-top: 2%;
+                    font-size: 6rem;
+                }
+                font-size: 10rem;
+                text-shadow: 4px 4px 4px #aaa;
+                margin-top: 1%;
+                padding: 1%;
+            }
+            p{
+                font-size: 2rem;
+                font-style: italic;
+                margin-bottom: 5%;
+                padding: 2%;
+                width:100%;
+                border-top: 2px ridge @nav-bg;
+                border-bottom: 2px ridge @nav-bg;
+                background-color: @main-bg;
+            }
+        }
     }
 
     .stylists{
@@ -48,22 +79,26 @@
                 @media @mobile{
                     display: none;
                 }
-                flex-shrink: 0;
-                text-align: center;
-                border: 1px solid black;
-                width: 10%;
+                width: 40%;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+   
             }
             .stylistContainer{
-                margin: 0 1%;
+                margin: 0% 1%;
                 align-self: flex-start;
                 border: 1px dashed @nav-bg;
-                padding: 1% 1%;
+                padding: 3% 1%;
                 background-color: @style-bg;
                 h3{
                     @media @mobile {
                         margin-bottom: 2%;
                         padding: 4% 0;
                     }
+                    margin-top: 2%;
                     margin-left: 1%;
                     font-size: 3rem;
                 }
@@ -71,7 +106,7 @@
                     @media @mobile {
                         margin-bottom: 1%;;
                     }
-                    padding: 1%;
+                    padding: 3%;
                     font-size: 2rem;
                 }
                 button{
@@ -79,12 +114,14 @@
                         width: 48%;
                     }
                     margin: 0 1%;
-                    padding-top: .5%;
+                    padding-top: 1%;
                     padding-right: 1%;
-                    width: 8%;
+                    width: 20%;
                     background-color: @blue;
                     border: 1px outset @nav-bg;
                     font-size: 1.5rem;
+                    &:hover{background-color: @white;}
+                    &:hover{color: @main-bg;}
                 }
                 a{
                     @media @mobile{
@@ -93,6 +130,7 @@
                     }
                     text-decoration: none;
                     font-size: 1.5rem;
+                    &:hover{color: @white;}
                 }
             }
         }
@@ -165,6 +203,7 @@
         }
         display: flex;
         flex-direction: column;
+        margin: 0 5%;
         h3{
             @media @mobile{
                 margin: 5%;
@@ -215,7 +254,8 @@
             }
             font-size: 2rem;
             background-color: @blue;
-            padding: .8% 1%;
+            padding: 3% 8%;
+            width: 100%;
         }
 
     }

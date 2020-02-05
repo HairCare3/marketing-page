@@ -10,7 +10,6 @@
     <body class="home-wrapper">
         <div class = 'navbar'>
             <nav>
-                <!-- <img class="logo"> -->
                 <a href = "index.html">Home</a>
                 <a href = "about.html">HC3 Product</a>
                 <a href = "developers.html">The Developers</a>
@@ -22,26 +21,34 @@
             </nav>
         </div>
         <header>
-            <!--ADD BG IMG PLS-->
-            <h1>Hair to the Throne</h1>
-            <p>Find your perfect hairstylist with <strong>Hair Care 3!</strong> You can add and read reviews, ratings, and view photos to find the hairstylist worthy of your crown.</p>
+            <div class="header-img">
+                <img src="images/salon-photo.jpg">
+            </div>
+            <div class="header-text">
+                <h1>Hair to the Throne</h1>
+                <p>Find your perfect hairstylist with <strong>Hair Care 3!</strong> You can add and read reviews, ratings, and view photos to find the hairstylist worthy of your crown.</p>
+              </div>
         </header>
         <section class="stylists">
             <!-- ADD STARS TO STYLISTS WITH CSS? -->
             <h2 class="sectionTitle">HC3 Pro Stylists</h2>
             <div class="hairProfessional">
-                <div class="profilePic">Photo Here</div>
+                <div class="profilePic">
+                    <img src="images/stylist1.jpg" alt="styist one"><p>Photo by Michael Dam on Unsplash</p>
+                </div>
                 <div class="stylistContainer">
-                    <h3>Stylist 1</h3>
+                    <h3>Jennifer Vega</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
                     <button>Book Stylist</button>
                     <a href="#reviews">Write Review</a>
                 </div>
             </div>
             <div class="hairProfessional">
-                <div class="profilePic">Photo Here</div>
+                <div class="profilePic">
+                    <img src="images/stylist2.jpg" alt="stylist 2"><p>Photo by Oz Seyrek on Unsplash</p>
+                </div>
                 <div class="stylistContainer">
-                    <h3>Stylist 2</h3>
+                    <h3>Amy Blackwell</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
                     <button>Book Stylist</button>
                     <a href="#reviews">Write Review</a>
@@ -49,9 +56,11 @@
                 
             </div>
             <div class="hairProfessional">
-                <div class="profilePic">Photo Here</div>
+                <div class="profilePic">
+                    <img src="images/stylist3.jpg" alt="Stylist 3"><p>Photo by Blake Barlow on Unsplash</p>
+                </div>
                 <div class="stylistContainer">
-                    <h3>Stylist 3</h2>
+                    <h3>Marcell White</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
                     <button>Book Stylist</button>
                     <a href="#writeReviews">Write Review</a>
@@ -59,9 +68,11 @@
 
             </div>
             <div class="hairProfessional">
-                <div class="profilePic">Photo Here</div>
+                <div class="profilePic">
+                    <img src="images/stylist4actual.jpg" alt="stylist four"><p>Photo by Gabriel Silvério on Unsplash</p>
+                </div>
                 <div class="stylistContainer">
-                    <h3>Stylist 4</h3>
+                    <h3>Hallie Price</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta esse porro ipsa, consectetur totam odio modi obcaecati adipisci a officia iste accusantium qui rerum similique temporibus animi in labore perferendis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore qui corporis non facere alias laboriosam voluptates in ipsa temporibus eligendi aliquid, incidunt perferendis. Sequi ipsum libero accusantium voluptatum! Hic, repellat?</p>
                     <button>Book Stylist</button>
                     <a href="#reviews">Write Review</a>
@@ -96,7 +107,9 @@
         </section>
         <section class="hairCarePro">
             <h3 class="sectionTitle">Hair Care 3 Pro?</h3>
-            <button class="sectionSignIn">Sign In/Up Here</button>
+            <form action="#">
+             <button class="sectionSignIn" type="button">Sign In/Up Here</button>
+            </form>
         </section>
         <footer>
             <h3 class="footerTitle">Contact Us!</h3>
