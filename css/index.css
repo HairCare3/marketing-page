@@ -489,6 +489,12 @@ footer p {
   margin-top: 1%;
   padding: 1%;
 }
+@media (max-width: 500px) {
+  .about-wrapper header h1 {
+    font-size: 6rem;
+    margin: 10% 0;
+  }
+}
 .about-wrapper .main-section-wrapper {
   border: 2px ridge #1A3A3A;
   margin: 1% 5%;
@@ -507,11 +513,23 @@ footer p {
   font-size: 5rem;
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .about-wrapper .main-section-wrapper .mission h2 {
+    align-self: center;
+    font-size: 4rem;
+    margin-top: 5%;
+  }
+}
 .about-wrapper .main-section-wrapper .mission p {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 2%;
   border-bottom: 1px dashed #1A3A3A;
+}
+@media (max-width: 500px) {
+  .about-wrapper .main-section-wrapper .mission p {
+    padding-bottom: 5%;
+  }
 }
 .about-wrapper .main-section-wrapper .features {
   display: flex;
@@ -525,6 +543,13 @@ footer p {
   font-size: 5rem;
   margin-bottom: 1%;
 }
+@media (max-width: 500px) {
+  .about-wrapper .main-section-wrapper .features h2 {
+    align-self: center;
+    font-size: 4rem;
+    margin-top: 5%;
+  }
+}
 .about-wrapper .main-section-wrapper .features p {
   font-size: 2.5rem;
   text-align: center;
@@ -536,14 +561,33 @@ footer p {
   align-items: center;
   width: 100%;
 }
+@media (max-width: 500px) {
+  .about-wrapper .main-section-wrapper .features .featureLists {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .about-wrapper .main-section-wrapper .features .featureLists h4 {
   font-size: 3rem;
   padding-top: 1%;
   margin: 0 1%;
 }
+@media (max-width: 500px) {
+  .about-wrapper .main-section-wrapper .features .featureLists h4 {
+    margin-top: 6%;
+    margin-bottom: 4%;
+  }
+}
 .about-wrapper .main-section-wrapper .features .featureLists ul {
   margin: 1% 1%;
   width: 20%;
+}
+@media (max-width: 500px) {
+  .about-wrapper .main-section-wrapper .features .featureLists ul {
+    width: 50%;
+  }
 }
 .about-wrapper .main-section-wrapper .features .featureLists ul li {
   font-size: 2rem;
@@ -555,6 +599,15 @@ footer p {
   justify-content: flex-start;
   align-items: flex-end;
   margin-right: 12%;
+}
+@media (max-width: 500px) {
+  .about-wrapper .comingSoon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+  }
 }
 .about-wrapper .comingSoon h2 {
   font-size: 5rem;
