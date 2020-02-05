@@ -13,9 +13,10 @@ header{
     padding: 2%;
     background-color: @style-bg;
     .mission{
-        .displayFlexColumn(flex-start,flex-start);
+        .displayFlexColumn(flex-start,center);
         margin-bottom: 2.5%;
         h2{
+            align-self: flex-start;
             font-size: 5rem;
             margin-bottom: 1%;
         }
@@ -24,6 +25,35 @@ header{
             text-align: center;
             padding-bottom: 2%;
             border-bottom: 1px dashed @nav-bg;
+        }
+    }
+    .features{
+        .displayFlexColumn(flex-start,center);
+        margin-bottom: 2.5%;
+        h2{
+            align-self: flex-start;
+            font-size: 5rem;
+            margin-bottom: 1%;
+        }
+        p{
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 2%;
+        }
+        .featureLists{
+            .displayFlex(space-evenly, center);
+            width: 100%;
+            h4{
+                font-size: 4rem;
+                padding-top: 1%;
+            }
+            ul{
+                margin: 1% 0;
+                li{
+                    font-size: 2rem;
+                    list-style-type: square;
+                }
+            }
         }
     }
 }
