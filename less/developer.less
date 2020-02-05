@@ -1,29 +1,44 @@
 .developers-wrapper {
-    header{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .dev1,
+  .dev2,
+  .dev3,
+  .dev4,
+  .dev5 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5%;
+  }
+  button {
+    box-shadow: inset;
+    border-radius: 50%;
+  }
+
+  .dev-img {
+    width: 100px;
+    border-radius: 25%;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .dev1,
+    .dev2,
+    .dev3,
+    .dev4,
+    .dev5 {
+      .displayFlexColumnTextAlign;
     }
 
-    .dev1, .dev2, .dev3, .dev4, .dev5 {
-        display: flex;
-       flex-wrap: wrap; 
-       justify-content: space-around;
-       margin: 5%;
-       
-    }
-    button {
-        box-shadow: inset;
-
-    }
     
-    @media (max-width: 500px){
-        .dev1, .dev2, .dev3, .dev4, .dev5 {
-         .displayFlexColumnTextAlign
-           
-    }
-    
-    
-}
+  }
 }
