@@ -131,23 +131,35 @@ table {
 }
 html {
   font-size: 62.5%;
+  background-color: #DCCFEC;
 }
-footer {
-  margin: 5%;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+button {
+  font-family: 'Condiment', cursive;
+  color: #4F517D;
 }
-footer h3 {
-  margin-top: 5%;
-}
-footer a {
-  padding: 2%;
-  text-decoration: none;
+p,
+li,
+input,
+textarea,
+#submitHere {
+  font-family: 'Lateef', cursive;
 }
 .navbar {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   align-content: flex-end;
-  margin: 1% 1% 1% 1%;
+  margin: 0% 1% 1% 0%;
+  padding: 1%;
+  width: 100%;
+  background-color: #1A3A3A;
 }
 .navbar nav {
   display: flex;
@@ -167,6 +179,7 @@ footer a {
   }
 }
 .navbar nav a {
+  color: #FFFFFF;
   font-size: 1.5rem;
   text-decoration: none;
 }
@@ -176,26 +189,68 @@ footer a {
   }
 }
 .navbar nav .loginBtn {
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #1A3A3A;
   font-size: 1.5rem;
   border: none;
 }
-
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  footer {
+    margin-top: 10%;
+  }
+}
+footer h3 {
+  margin-top: 2%;
+  font-size: 3rem;
+}
+footer a {
+  padding-top: 1%;
+  text-decoration: none;
+  font-size: 2rem;
+}
+@media (max-width: 500px) {
+  footer a {
+    margin-top: 3%;
+  }
+}
+footer p {
+  align-self: center;
+  font-size: 1.5rem;
+  padding-top: 1%;
+}
 .home-wrapper header {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 5%;
+  border-bottom: 1px dashed #1A3A3A;
 }
-
-
 .home-wrapper header h1 {
+  font-size: 10rem;
+  text-shadow: 4px 4px 4px #aaa;
   margin-top: 1%;
   padding: 1%;
 }
 @media (max-width: 500px) {
   .home-wrapper header h1 {
-    align-self: flex-start;
+    text-align: center;
+    margin-top: 2%;
+    font-size: 6rem;
   }
+}
+.home-wrapper header p {
+  font-size: 2rem;
+  font-style: italic;
+  margin-bottom: 5%;
 }
 .home-wrapper .stylists {
   display: flex;
@@ -203,12 +258,15 @@ footer a {
   margin: 1% 1%;
 }
 .home-wrapper .stylists .sectionTitle {
-  margin-bottom: 1%;
+  margin-bottom: 3%;
+  margin-left: 3%;
+  font-size: 6rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .sectionTitle {
     align-self: center;
     margin: 5%;
+    font-size: 4rem;
   }
 }
 .home-wrapper .stylists .hairProfessional {
@@ -234,17 +292,23 @@ footer a {
 .home-wrapper .stylists .hairProfessional .stylistContainer {
   margin: 0 1%;
   align-self: flex-start;
+  border: 1px dashed #1A3A3A;
+  padding: 1% 1%;
+  background-color: #DDC4DD;
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer h3 {
   margin-left: 1%;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer h3 {
     margin-bottom: 2%;
+    padding: 4% 0;
   }
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer p {
   padding: 1%;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer p {
@@ -253,6 +317,12 @@ footer a {
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer button {
   margin: 0 1%;
+  padding-top: 0.5%;
+  padding-right: 1%;
+  width: 8%;
+  background-color: #A997DF;
+  border: 1px outset #1A3A3A;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer button {
@@ -261,10 +331,12 @@ footer a {
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer a {
   text-decoration: none;
+  font-size: 1.5rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer a {
     width: 48%;
+    margin-left: 15%;
   }
 }
 .home-wrapper .reviews {
@@ -274,14 +346,16 @@ footer a {
 .home-wrapper .reviews h2 {
   align-self: center;
   margin: 2%;
+  font-size: 6rem;
 }
 .home-wrapper .reviews .reviewInput {
   display: flex;
   flex-direction: column;
-  margin-left: 1%;
+  margin-left: 3%;
 }
 .home-wrapper .reviews .reviewInput h3 {
   margin: 1% 0;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput h3 {
@@ -294,6 +368,10 @@ footer a {
 }
 .home-wrapper .reviews .reviewInput .reviewForm input {
   width: 20%;
+  height: 4vh;
+  font-size: 1.5rem;
+  border: 1px inset #1A3A3A;
+  text-align: center;
 }
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput .reviewForm input {
@@ -305,6 +383,7 @@ footer a {
 .home-wrapper .reviews .reviewInput .reviewForm textarea {
   margin: 1% 1% 1% 0;
   height: 15vh;
+  width: 50%;
 }
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput .reviewForm textarea {
@@ -318,6 +397,10 @@ footer a {
 .home-wrapper .reviews .reviewInput .reviewForm #submitHere {
   width: 10%;
   margin-bottom: 1%;
+  border-radius: 10px;
+  font-size: 2rem;
+  background-color: #A997DF;
+  color: #FFFFFF;
 }
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput .reviewForm #submitHere {
@@ -329,9 +412,15 @@ footer a {
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 500px) {
+  .home-wrapper .userReviews {
+    margin-right: 5%;
+  }
+}
 .home-wrapper .userReviews h3 {
   align-self: flex-end;
-  margin: 2%;
+  margin: 5%;
+  font-size: 4rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .userReviews h3 {
@@ -348,6 +437,7 @@ footer a {
 .home-wrapper .userReviews .hc3User h4 {
   align-self: flex-start;
   margin: 1% 1% 1% 5%;
+  font-size: 3rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .userReviews .hc3User h4 {
@@ -357,6 +447,9 @@ footer a {
 }
 .home-wrapper .userReviews .hc3User p.pastReview {
   padding: 1%;
+  align-self: flex-start;
+  margin-left: 5%;
+  font-size: 2rem;
 }
 @media (max-width: 500px) {
   .home-wrapper .userReviews .hc3User p.pastReview {
@@ -369,12 +462,87 @@ footer a {
   justify-content: space-between;
   align-items: center;
   margin: 4%;
+  font-size: 5rem;
 }
 .home-wrapper .hairCarePro h3 {
   margin: 2% 0;
+}
+.home-wrapper .hairCarePro .sectionSignIn {
+  font-size: 2rem;
+  background-color: #A997DF;
+  padding: 0.8% 1%;
 }
 @media (max-width: 500px) {
   .home-wrapper .hairCarePro .sectionSignIn {
     border: 1px outset darkslategray;
   }
+}
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+header h1 {
+  font-size: 10rem;
+  text-shadow: 4px 4px 4px #aaa;
+  margin-top: 1%;
+  padding: 1%;
+}
+.main-section-wrapper {
+  border: 2px ridge #1A3A3A;
+  margin: 1% 5%;
+  padding: 2%;
+  background-color: #DDC4DD;
+}
+.main-section-wrapper .mission {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.5%;
+}
+.main-section-wrapper .mission h2 {
+  align-self: flex-start;
+  font-size: 5rem;
+  margin-bottom: 1%;
+}
+.main-section-wrapper .mission p {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 2%;
+  border-bottom: 1px dashed #1A3A3A;
+}
+.main-section-wrapper .features {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 2.5%;
+}
+.main-section-wrapper .features h2 {
+  align-self: flex-start;
+  font-size: 5rem;
+  margin-bottom: 1%;
+}
+.main-section-wrapper .features p {
+  font-size: 2.5rem;
+  text-align: center;
+  padding-bottom: 2%;
+}
+.main-section-wrapper .features .featureLists {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+}
+.main-section-wrapper .features .featureLists h4 {
+  font-size: 4rem;
+  padding-top: 1%;
+}
+.main-section-wrapper .features .featureLists ul {
+  margin: 1% 0;
+}
+.main-section-wrapper .features .featureLists ul li {
+  font-size: 2rem;
+  list-style-type: square;
 }
