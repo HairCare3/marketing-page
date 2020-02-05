@@ -1,3 +1,9 @@
+.displayFlexColumnTextAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -132,6 +138,18 @@ table {
 html {
   font-size: 62.5%;
   background-color: #DCCFEC;
+}
+html h1 {
+  font-size: 5rem;
+}
+html h2 {
+  font-size: 3rem;
+}
+html h3 {
+  font-size: 2.5rem;
+}
+html p {
+  font-size: 2rem;
 }
 h1,
 h2,
@@ -545,4 +563,35 @@ header h1 {
 .main-section-wrapper .features .featureLists ul li {
   font-size: 2rem;
   list-style-type: square;
+}
+.developers-wrapper header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.developers-wrapper .dev1,
+.developers-wrapper .dev2,
+.developers-wrapper .dev3,
+.developers-wrapper .dev4,
+.developers-wrapper .dev5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5%;
+}
+.developers-wrapper button {
+  box-shadow: inset;
+}
+@media (max-width: 500px) {
+  .developers-wrapper .dev1,
+  .developers-wrapper .dev2,
+  .developers-wrapper .dev3,
+  .developers-wrapper .dev4,
+  .developers-wrapper .dev5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
