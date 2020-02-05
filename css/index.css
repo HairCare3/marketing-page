@@ -1,3 +1,10 @@
+.displayFlexColumnTextAlign {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -90,6 +97,7 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -104,17 +112,21 @@ nav,
 section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
+
 ol,
 ul {
   list-style: none;
 }
+
 blockquote,
 q {
   quotes: none;
 }
+
 blockquote:before,
 blockquote:after,
 q:before,
@@ -122,17 +134,37 @@ q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 * {
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
   background-color: #DCCFEC;
 }
+
+html h1 {
+  font-size: 5rem;
+}
+
+html h2 {
+  font-size: 3rem;
+}
+
+html h3 {
+  font-size: 2.5rem;
+}
+
+html p {
+  font-size: 2rem;
+}
+
 h1,
 h2,
 h3,
@@ -144,6 +176,7 @@ button {
   font-family: 'Condiment', cursive;
   color: #4F517D;
 }
+
 p,
 li,
 input,
@@ -151,6 +184,7 @@ textarea,
 #submitHere {
   font-family: 'Lateef', cursive;
 }
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -161,6 +195,7 @@ textarea,
   width: 100%;
   background-color: #1A3A3A;
 }
+
 .navbar nav {
   display: flex;
   justify-content: space-between;
@@ -169,6 +204,7 @@ textarea,
   width: 40%;
   margin-right: 2%;
 }
+
 @media (max-width: 500px) {
   .navbar nav {
     display: flex;
@@ -178,19 +214,23 @@ textarea,
     margin: 1% 5%;
   }
 }
+
 .navbar nav a {
   color: #FFFFFF;
   font-size: 1.5rem;
   text-decoration: none;
 }
+
 @media (max-width: 500px) {
   .navbar nav a {
     padding: 1% 0;
   }
 }
+
 .navbar nav a:hover {
   color: #DCCFEC;
 }
+
 .navbar nav .loginBtn {
   text-align: center;
   color: #FFFFFF;
@@ -198,9 +238,11 @@ textarea,
   font-size: 1.5rem;
   border: none;
 }
+
 .navbar nav .loginBtn:hover {
   color: #DCCFEC;
 }
+
 footer {
   display: flex;
   flex-direction: column;
@@ -208,30 +250,36 @@ footer {
   margin-left: 5%;
   margin-bottom: 5%;
 }
+
 @media (max-width: 500px) {
   footer {
     margin-top: 10%;
   }
 }
+
 footer h3 {
   margin-top: 2%;
   font-size: 3rem;
 }
+
 footer a {
   padding-top: 1%;
   text-decoration: none;
   font-size: 2rem;
 }
+
 @media (max-width: 500px) {
   footer a {
     margin-top: 3%;
   }
 }
+
 footer p {
   align-self: center;
   font-size: 1.5rem;
   padding-top: 1%;
 }
+
 .home-wrapper header {
   display: flex;
   flex-direction: column;
@@ -240,12 +288,14 @@ footer p {
   margin: 5%;
   border-bottom: 1px dashed #1A3A3A;
 }
+
 .home-wrapper header .header-img img {
   width: 100%;
   height: auto;
   opacity: 0.4;
   margin-bottom: 5%;
 }
+
 .home-wrapper header .header-text {
   position: absolute;
   z-index: 999;
@@ -254,17 +304,20 @@ footer p {
   text-align: center;
   width: 100%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper header .header-text {
     position: none;
   }
 }
+
 .home-wrapper header .header-text h1 {
   font-size: 10rem;
   text-shadow: 4px 4px 4px #aaa;
   margin-top: 1%;
   padding: 1%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper header .header-text h1 {
     text-align: center;
@@ -272,6 +325,7 @@ footer p {
     font-size: 6rem;
   }
 }
+
 .home-wrapper header .header-text p {
   font-size: 2rem;
   font-style: italic;
@@ -282,16 +336,19 @@ footer p {
   border-bottom: 2px ridge #1A3A3A;
   background-color: #DCCFEC;
 }
+
 .home-wrapper .stylists {
   display: flex;
   flex-direction: column;
   margin: 1% 1%;
 }
+
 .home-wrapper .stylists .sectionTitle {
   margin-bottom: 3%;
   margin-left: 3%;
   font-size: 6rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .sectionTitle {
     align-self: center;
@@ -299,27 +356,33 @@ footer p {
     font-size: 4rem;
   }
 }
+
 .home-wrapper .stylists .hairProfessional {
   display: flex;
   padding: 1%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional {
     margin-bottom: 5%;
   }
 }
+
 .home-wrapper .stylists .hairProfessional .profilePic {
   width: 40%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .profilePic {
     display: none;
   }
 }
+
 .home-wrapper .stylists .hairProfessional .profilePic img {
   width: 100%;
   height: auto;
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer {
   margin: 0% 1%;
   align-self: flex-start;
@@ -327,26 +390,31 @@ footer p {
   padding: 3% 1%;
   background-color: #DDC4DD;
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer h3 {
   margin-top: 2%;
   margin-left: 1%;
   font-size: 3rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer h3 {
     margin-bottom: 2%;
     padding: 4% 0;
   }
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer p {
   padding: 3%;
   font-size: 2rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer p {
     margin-bottom: 1%;
   }
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer button {
   margin: 0 1%;
   padding-top: 1%;
@@ -356,57 +424,70 @@ footer p {
   border: 1px outset #1A3A3A;
   font-size: 1.5rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer button {
     width: 48%;
   }
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer button:hover {
   background-color: #FFFFFF;
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer button:hover {
   color: #DCCFEC;
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer a {
   text-decoration: none;
   font-size: 1.5rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .stylistContainer a {
     width: 48%;
     margin-left: 15%;
   }
 }
+
 .home-wrapper .stylists .hairProfessional .stylistContainer a:hover {
   color: #FFFFFF;
 }
+
 .home-wrapper .reviews {
   display: flex;
   flex-direction: column;
 }
+
 .home-wrapper .reviews h2 {
   align-self: center;
   margin: 2%;
   font-size: 6rem;
 }
+
 .home-wrapper .reviews .reviewInput {
   display: flex;
   flex-direction: column;
   margin-left: 3%;
 }
+
 .home-wrapper .reviews .reviewInput h3 {
   margin: 1% 0;
   font-size: 3rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput h3 {
     margin: 3% 0;
   }
 }
+
 .home-wrapper .reviews .reviewInput .reviewForm {
   display: flex;
   flex-direction: column;
 }
+
 .home-wrapper .reviews .reviewInput .reviewForm input {
   width: 20%;
   height: 4vh;
@@ -414,6 +495,7 @@ footer p {
   border: 1px inset #1A3A3A;
   text-align: center;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput .reviewForm input {
     align-self: center;
@@ -421,11 +503,13 @@ footer p {
     border: 1px inset darkslategray;
   }
 }
+
 .home-wrapper .reviews .reviewInput .reviewForm textarea {
   margin: 1% 1% 1% 0;
   height: 15vh;
   width: 50%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput .reviewForm textarea {
     align-self: center;
@@ -435,6 +519,7 @@ footer p {
     margin: 2%;
   }
 }
+
 .home-wrapper .reviews .reviewInput .reviewForm #submitHere {
   width: 10%;
   margin-bottom: 1%;
@@ -443,32 +528,38 @@ footer p {
   background-color: #A997DF;
   color: #FFFFFF;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .reviews .reviewInput .reviewForm #submitHere {
     width: 20%;
     margin-bottom: 5%;
   }
 }
+
 .home-wrapper .userReviews {
   display: flex;
   flex-direction: column;
   margin: 0 5%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .userReviews {
     margin-right: 5%;
   }
 }
+
 .home-wrapper .userReviews h3 {
   align-self: flex-end;
   margin: 5%;
   font-size: 4rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .userReviews h3 {
     margin: 5%;
   }
 }
+
 .home-wrapper .userReviews .hc3User {
   display: flex;
   flex-direction: column;
@@ -476,28 +567,33 @@ footer p {
   flex-wrap: nowrap;
   margin-left: 1%;
 }
+
 .home-wrapper .userReviews .hc3User h4 {
   align-self: flex-start;
   margin: 1% 1% 1% 5%;
   font-size: 3rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .userReviews .hc3User h4 {
     align-self: center;
     margin: 3%;
   }
 }
+
 .home-wrapper .userReviews .hc3User p.pastReview {
   padding: 1%;
   align-self: flex-start;
   margin-left: 5%;
   font-size: 2rem;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .userReviews .hc3User p.pastReview {
     margin-bottom: 2%;
   }
 }
+
 .home-wrapper .hairCarePro {
   display: flex;
   flex-direction: column;
@@ -506,26 +602,31 @@ footer p {
   margin: 4%;
   font-size: 5rem;
 }
+
 .home-wrapper .hairCarePro h3 {
   margin: 2% 0;
 }
+
 .home-wrapper .hairCarePro .sectionSignIn {
   font-size: 2rem;
   background-color: #A997DF;
   padding: 3% 8%;
   width: 100%;
 }
+
 @media (max-width: 500px) {
   .home-wrapper .hairCarePro .sectionSignIn {
     border: 1px outset darkslategray;
   }
 }
+
 .about-wrapper header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-flow: nowrap;
 }
+
 .about-wrapper header h1 {
   font-size: 8rem;
   text-shadow: 4px 4px 4px #aaa;
@@ -534,6 +635,7 @@ footer p {
   padding: 1%;
   width: 50%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper header h1 {
     font-size: 6rem;
@@ -541,12 +643,14 @@ footer p {
     width: 100%;
   }
 }
+
 .about-wrapper .main-section-wrapper {
   border: 2px ridge #1A3A3A;
   margin: 1% 5%;
   padding: 2%;
   background-color: #DDC4DD;
 }
+
 .about-wrapper .main-section-wrapper .mission {
   display: flex;
   flex-direction: column;
@@ -554,11 +658,13 @@ footer p {
   align-items: center;
   margin-bottom: 2.5%;
 }
+
 .about-wrapper .main-section-wrapper .mission h2 {
   align-self: flex-start;
   font-size: 5rem;
   margin-bottom: 1%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .main-section-wrapper .mission h2 {
     align-self: center;
@@ -566,17 +672,20 @@ footer p {
     margin-top: 5%;
   }
 }
+
 .about-wrapper .main-section-wrapper .mission p {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 2%;
   border-bottom: 1px dashed #1A3A3A;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .main-section-wrapper .mission p {
     padding-bottom: 5%;
   }
 }
+
 .about-wrapper .main-section-wrapper .features {
   display: flex;
   flex-direction: column;
@@ -584,11 +693,13 @@ footer p {
   align-items: center;
   margin-bottom: 2.5%;
 }
+
 .about-wrapper .main-section-wrapper .features h2 {
   align-self: flex-start;
   font-size: 5rem;
   margin-bottom: 1%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .main-section-wrapper .features h2 {
     align-self: center;
@@ -596,17 +707,20 @@ footer p {
     margin-top: 5%;
   }
 }
+
 .about-wrapper .main-section-wrapper .features p {
   font-size: 2.5rem;
   text-align: center;
   padding-bottom: 2%;
 }
+
 .about-wrapper .main-section-wrapper .features .featureLists {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   width: 100%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .main-section-wrapper .features .featureLists {
     display: flex;
@@ -615,30 +729,36 @@ footer p {
     align-items: center;
   }
 }
+
 .about-wrapper .main-section-wrapper .features .featureLists h4 {
   font-size: 3rem;
   padding-top: 1%;
   margin: 0 1%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .main-section-wrapper .features .featureLists h4 {
     margin-top: 6%;
     margin-bottom: 4%;
   }
 }
+
 .about-wrapper .main-section-wrapper .features .featureLists ul {
   margin: 1% 1%;
   width: 20%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .main-section-wrapper .features .featureLists ul {
     width: 50%;
   }
 }
+
 .about-wrapper .main-section-wrapper .features .featureLists ul li {
   font-size: 2rem;
   list-style-type: square;
 }
+
 .about-wrapper .comingSoon {
   display: flex;
   flex-direction: column;
@@ -646,6 +766,7 @@ footer p {
   align-items: flex-end;
   margin-right: 12%;
 }
+
 @media (max-width: 500px) {
   .about-wrapper .comingSoon {
     display: flex;
@@ -655,14 +776,53 @@ footer p {
     margin: 5% 0;
   }
 }
+
 .about-wrapper .comingSoon h2 {
   font-size: 5rem;
   margin-top: 5%;
 }
+
 .about-wrapper .comingSoon ul {
   margin-top: 2%;
 }
+
 .about-wrapper .comingSoon ul li {
   font-size: 2.5rem;
   list-style-type: square;
+}
+
+.developers-wrapper header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.developers-wrapper .dev1,
+.developers-wrapper .dev2,
+.developers-wrapper .dev3,
+.developers-wrapper .dev4,
+.developers-wrapper .dev5 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 5%;
+}
+
+.developers-wrapper button {
+  box-shadow: inset;
+}
+
+@media (max-width: 500px) {
+
+  .developers-wrapper .dev1,
+  .developers-wrapper .dev2,
+  .developers-wrapper .dev3,
+  .developers-wrapper .dev4,
+  .developers-wrapper .dev5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 }
