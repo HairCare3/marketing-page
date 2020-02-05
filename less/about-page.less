@@ -8,11 +8,22 @@ header{
    }
 }
 .main-section-wrapper{
-    border: 2px dashed @nav-bg;
+    border: 2px ridge @nav-bg;
     margin: 1% 5%;
     padding: 2%;
     background-color: @style-bg;
     .mission{
         .displayFlexColumn(flex-start,flex-start);
+        margin-bottom: 2.5%;
+        h2{
+            font-size: 5rem;
+            margin-bottom: 1%;
+        }
+        p{
+            font-size: 2.5rem;
+            text-align: center;
+            padding-bottom: 2%;
+            border-bottom: 1px dashed @nav-bg;
+        }
     }
 }
