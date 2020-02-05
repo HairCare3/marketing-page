@@ -331,6 +331,12 @@ footer p {
     width: 48%;
   }
 }
+.home-wrapper .stylists .hairProfessional .stylistContainer button:hover {
+  background-color: #FFFFFF;
+}
+.home-wrapper .stylists .hairProfessional .stylistContainer button:hover {
+  color: #DCCFEC;
+}
 .home-wrapper .stylists .hairProfessional .stylistContainer a {
   text-decoration: none;
   font-size: 1.5rem;
@@ -340,6 +346,9 @@ footer p {
     width: 48%;
     margin-left: 15%;
   }
+}
+.home-wrapper .stylists .hairProfessional .stylistContainer a:hover {
+  color: #FFFFFF;
 }
 .home-wrapper .reviews {
   display: flex;
