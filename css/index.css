@@ -613,15 +613,17 @@ header h1 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .review-wrapper .page-content header {
   display: flex;
   justify-content: center;
 }
 @media (max-width: 500px) {
-  .review-wrapper {
+  .review-wrapper header {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
   }
