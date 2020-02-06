@@ -324,6 +324,10 @@ footer p {
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 5%;
   }
 }
@@ -333,13 +337,24 @@ footer p {
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .profilePic {
-    display: none;
+    height: 52vh;
+  }
+}
+@media (max-width: 800px) {
+  .home-wrapper .stylists .hairProfessional .profilePic {
+    width: 100%;
+    margin: 2.5% 0;
   }
 }
 .home-wrapper .stylists .hairProfessional .profilePic img {
   width: 100%;
   height: auto;
   border: 2px outset #1A3A3A;
+}
+@media (max-width: 800px) {
+  .home-wrapper .stylists .hairProfessional .profilePic p {
+    display: none;
+  }
 }
 .home-wrapper .stylists .hairProfessional .stylistContainer {
   margin: 0% 1%;
@@ -410,6 +425,11 @@ footer p {
   align-self: center;
   margin: 2%;
   font-size: 6rem;
+}
+@media (max-width: 800px) {
+  .home-wrapper .reviews h2 {
+    margin-top: 8%;
+  }
 }
 .home-wrapper .reviews .reviewInput {
   display: flex;
@@ -485,6 +505,7 @@ footer p {
 @media (max-width: 500px) {
   .home-wrapper .userReviews {
     margin-right: 5%;
+    margin-top: 5%;
   }
 }
 .home-wrapper .userReviews h3 {
@@ -502,7 +523,7 @@ footer p {
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
-  margin-left: 1%;
+  margin: 2%;
 }
 .home-wrapper .userReviews .hc3User h4 {
   align-self: flex-start;
@@ -601,6 +622,12 @@ footer p {
     margin-top: 5%;
   }
 }
+@media (max-width: 800px) {
+  .about-wrapper .main-section-wrapper .mission h2 {
+    font-size: 4.5rem;
+    margin-top: 3%;
+  }
+}
 .about-wrapper .main-section-wrapper .mission p {
   font-size: 2.5rem;
   text-align: center;
@@ -629,6 +656,12 @@ footer p {
     align-self: center;
     font-size: 4rem;
     margin-top: 5%;
+  }
+}
+@media (max-width: 800px) {
+  .about-wrapper .main-section-wrapper .features h2 {
+    font-size: 4.5rem;
+    margin-top: 3%;
   }
 }
 .about-wrapper .main-section-wrapper .features p {
@@ -661,6 +694,12 @@ footer p {
     margin-bottom: 4%;
   }
 }
+@media (max-width: 800px) {
+  .about-wrapper .main-section-wrapper .features .featureLists h4 {
+    font-size: 2.5rem;
+    margin-right: 5%;
+  }
+}
 .about-wrapper .main-section-wrapper .features .featureLists ul {
   margin: 1% 1%;
   width: 20%;
@@ -670,9 +709,19 @@ footer p {
     width: 50%;
   }
 }
+@media (max-width: 800px) {
+  .about-wrapper .main-section-wrapper .features .featureLists ul {
+    margin-top: 5%;
+  }
+}
 .about-wrapper .main-section-wrapper .features .featureLists ul li {
   font-size: 2rem;
   list-style-type: square;
+}
+@media (max-width: 800px) {
+  .about-wrapper .main-section-wrapper .features .featureLists ul li {
+    font-size: 2rem;
+  }
 }
 .about-wrapper .bottom-section-container {
   display: flex;
@@ -718,6 +767,11 @@ footer p {
     justify-content: center;
     align-items: center;
     margin: 5% 0;
+  }
+}
+@media (max-width: 800px) {
+  .about-wrapper .bottom-section-container .comingSoon {
+    margin-right: 18%;
   }
 }
 .about-wrapper .bottom-section-container .comingSoon h2 {
