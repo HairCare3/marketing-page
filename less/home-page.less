@@ -26,9 +26,6 @@
             margin: 0 auto;
             padding: 2% 0;
             text-align: center;
-            // border-top: 1px solid @nav-bg;
-            // // border-bottom: 1px solid @nav-bg;
-            // background-color: @style-bg;
             width: 100%;
  
             h1{
@@ -48,8 +45,8 @@
                 margin-bottom: 5%;
                 padding: 2%;
                 width:100%;
-                border-top: 2px ridge @nav-bg;
-                border-bottom: 2px ridge @nav-bg;
+                border-top: 2px outset @nav-bg;
+                border-bottom: 2px outset @nav-bg;
                 background-color: @main-bg;
             }
         }
@@ -81,6 +78,7 @@
                     display: none;
                 }
                 width: 40%;
+                height: max-content;
 
                 img {
                     width: 100%;
@@ -196,6 +194,8 @@
                     font-size: 2rem;
                     background-color: @blue;
                     color: @white;
+                    &:hover{background-color: @white;}
+                    &:hover{color: @main-bg;}
                 }
             }
         }
@@ -259,6 +259,8 @@
             background-color: @blue;
             padding: 3% 8%;
             width: 100%;
+            &:hover{background-color: @white;}
+            &:hover{color: @main-bg;}
         }
 
     }

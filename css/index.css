@@ -174,7 +174,7 @@ textarea,
   justify-content: flex-end;
   align-items: center;
   align-content: flex-end;
-  margin: 0% 1% 1% 0%;
+  margin: 0% 1% 0% 0%;
   padding: 1%;
   width: 100%;
   background-color: #1A3A3A;
@@ -296,8 +296,8 @@ footer p {
   margin-bottom: 5%;
   padding: 2%;
   width: 100%;
-  border-top: 2px ridge #1A3A3A;
-  border-bottom: 2px ridge #1A3A3A;
+  border-top: 2px outset #1A3A3A;
+  border-bottom: 2px outset #1A3A3A;
   background-color: #DCCFEC;
 }
 .home-wrapper .stylists {
@@ -329,6 +329,7 @@ footer p {
 }
 .home-wrapper .stylists .hairProfessional .profilePic {
   width: 40%;
+  height: max-content;
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .profilePic {
@@ -470,6 +471,12 @@ footer p {
     margin-bottom: 5%;
   }
 }
+.home-wrapper .reviews .reviewInput .reviewForm #submitHere:hover {
+  background-color: #FFFFFF;
+}
+.home-wrapper .reviews .reviewInput .reviewForm #submitHere:hover {
+  color: #DCCFEC;
+}
 .home-wrapper .userReviews {
   display: flex;
   flex-direction: column;
@@ -541,11 +548,18 @@ footer p {
     border: 1px outset darkslategray;
   }
 }
+.home-wrapper .hairCarePro .sectionSignIn:hover {
+  background-color: #FFFFFF;
+}
+.home-wrapper .hairCarePro .sectionSignIn:hover {
+  color: #DCCFEC;
+}
 .about-wrapper header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-flow: nowrap;
+  margin-top: 2%;
 }
 .about-wrapper header h1 {
   font-size: 8rem;
@@ -563,7 +577,7 @@ footer p {
   }
 }
 .about-wrapper .main-section-wrapper {
-  border: 2px ridge #1A3A3A;
+  border: 2px outset #1A3A3A;
   margin: 1% 5%;
   padding: 2%;
   background-color: #DDC4DD;
@@ -660,15 +674,45 @@ footer p {
   font-size: 2rem;
   list-style-type: square;
 }
-.about-wrapper .comingSoon {
+.about-wrapper .bottom-section-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 5%;
+}
+@media (max-width: 500px) {
+  .about-wrapper .bottom-section-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+  }
+}
+.about-wrapper .bottom-section-container .about-img-wrapper {
+  width: 48%;
+  margin: 0 5%;
+}
+@media (max-width: 500px) {
+  .about-wrapper .bottom-section-container .about-img-wrapper {
+    width: 100%;
+  }
+}
+.about-wrapper .bottom-section-container .about-img-wrapper img {
+  width: 100%;
+  height: auto;
+  border: 2px outset #1A3A3A;
+}
+.about-wrapper .bottom-section-container .comingSoon {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
-  margin-right: 12%;
+  margin-right: 25%;
+  width: 48%;
 }
 @media (max-width: 500px) {
-  .about-wrapper .comingSoon {
+  .about-wrapper .bottom-section-container .comingSoon {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -676,14 +720,20 @@ footer p {
     margin: 5% 0;
   }
 }
-.about-wrapper .comingSoon h2 {
+.about-wrapper .bottom-section-container .comingSoon h2 {
   font-size: 5rem;
   margin-top: 5%;
 }
-.about-wrapper .comingSoon ul {
+@media (max-width: 500px) {
+  .about-wrapper .bottom-section-container .comingSoon h2 {
+    font-size: 3rem;
+    width: 100%;
+  }
+}
+.about-wrapper .bottom-section-container .comingSoon ul {
   margin-top: 2%;
 }
-.about-wrapper .comingSoon ul li {
+.about-wrapper .bottom-section-container .comingSoon ul li {
   font-size: 2.5rem;
   list-style-type: square;
 }
