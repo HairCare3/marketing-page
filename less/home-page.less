@@ -4,7 +4,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 5%;
+        margin-bottom: 5%;
         border-bottom: 1px dashed @nav-bg;
         .header-img{
             img {
@@ -24,7 +24,7 @@
             position: absolute;
             z-index: 999;
             margin: 0 auto;
-            padding: 2%;
+            padding: 2% 0;
             text-align: center;
             // border-top: 1px solid @nav-bg;
             // // border-bottom: 1px solid @nav-bg;
@@ -74,6 +74,7 @@
                 margin-bottom: 5%;
             }
             display: flex;
+            align-items: center;
             padding: 1%;
             .profilePic{
                 @media @mobile{
@@ -84,6 +85,7 @@
                 img {
                     width: 100%;
                     height: auto;
+                    border: 2px outset @nav-bg;
                 }
    
             }
@@ -93,6 +95,7 @@
                 border: 1px dashed @nav-bg;
                 padding: 3% 1%;
                 background-color: @style-bg;
+                height: 100%;
                 h3{
                     @media @mobile {
                         margin-bottom: 2%;
