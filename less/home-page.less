@@ -4,13 +4,10 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 5%;
+        margin-bottom: 5%;
         border-bottom: 1px dashed @nav-bg;
         .header-img{
             img {
-                // @media @mobile{
-                //     display: none;
-                // }
                 width: 100%;
                 height: auto;
                 opacity: .4;
@@ -24,11 +21,8 @@
             position: absolute;
             z-index: 999;
             margin: 0 auto;
-            padding: 2%;
+            padding: 2% 0;
             text-align: center;
-            // border-top: 1px solid @nav-bg;
-            // // border-bottom: 1px solid @nav-bg;
-            // background-color: @style-bg;
             width: 100%;
  
             h1{
@@ -48,8 +42,8 @@
                 margin-bottom: 5%;
                 padding: 2%;
                 width:100%;
-                border-top: 2px ridge @nav-bg;
-                border-bottom: 2px ridge @nav-bg;
+                border-top: 2px outset @nav-bg;
+                border-bottom: 2px outset @nav-bg;
                 background-color: @main-bg;
             }
         }
@@ -71,19 +65,32 @@
         }
         .hairProfessional{
             @media @mobile{
+                .displayFlexColumn(center, center);
                 margin-bottom: 5%;
             }
             display: flex;
+            align-items: center;
             padding: 1%;
             .profilePic{
                 @media @mobile{
-                    display: none;
+                    height: 52vh;
+                }
+                @media @tablet{
+                    width: 100%;
+                    margin: 2.5% 0;
                 }
                 width: 40%;
+                height: max-content;
 
                 img {
                     width: 100%;
                     height: auto;
+                    border: 2px outset @nav-bg;
+                }
+                p{
+                    @media @tablet{
+                        display: none;
+                    }
                 }
    
             }
@@ -93,6 +100,7 @@
                 border: 1px dashed @nav-bg;
                 padding: 3% 1%;
                 background-color: @style-bg;
+                height: 100%;
                 h3{
                     @media @mobile {
                         margin-bottom: 2%;
@@ -106,6 +114,7 @@
                     @media @mobile {
                         margin-bottom: 1%;;
                     }
+                    
                     padding: 3%;
                     font-size: 2rem;
                 }
@@ -140,6 +149,9 @@
         display: flex;
         flex-direction: column;
         h2{
+            @media @tablet{
+                margin-top: 8%;
+            }
             align-self: center;
             margin: 2%;
             font-size: 6rem;
@@ -193,6 +205,8 @@
                     font-size: 2rem;
                     background-color: @blue;
                     color: @white;
+                    &:hover{background-color: @white;}
+                    &:hover{color: @main-bg;}
                 }
             }
         }
@@ -200,6 +214,7 @@
     .userReviews{
         @media @mobile{
             margin-right: 5%;
+            margin-top: 5%;
         }
         display: flex;
         flex-direction: column;
@@ -217,7 +232,7 @@
             flex-direction: column;
             align-items: center;
             flex-wrap: nowrap;
-            margin-left: 1%;
+            margin: 2%;
             h4{
                 @media @mobile{
                     align-self: center;
@@ -256,6 +271,8 @@
             background-color: @blue;
             padding: 3% 8%;
             width: 100%;
+            &:hover{background-color: @white;}
+            &:hover{color: @main-bg;}
         }
 
     }
