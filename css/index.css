@@ -809,6 +809,15 @@ footer p {
 }
 .developers-wrapper button {
   box-shadow: inset;
+  border-radius: 50%;
+}
+.developers-wrapper .dev-img {
+  width: 100px;
+  border-radius: 25%;
+}
+.developers-wrapper .dev-img img {
+  width: 100%;
+  height: auto;
 }
 @media (max-width: 500px) {
   .developers-wrapper .dev1,
@@ -818,6 +827,30 @@ footer p {
   .developers-wrapper .dev5 {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+.review-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.review-wrapper .page-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.review-wrapper .page-content header {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .review-wrapper header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     text-align: center;
   }
