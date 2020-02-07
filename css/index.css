@@ -337,7 +337,7 @@ footer p {
 }
 @media (max-width: 500px) {
   .home-wrapper .stylists .hairProfessional .profilePic {
-    height: 52vh;
+    height: 65vh;
   }
 }
 @media (max-width: 800px) {
